@@ -1,0 +1,16 @@
+== PACKAGE
+== INSTALL ORG1
+Error: chaincode install failed with status: 500 - failed to invoke backing implementation of 'InstallChaincode': could not build chaincode: docker build failed: docker image build failed: docker build failed: Error returned from build: 1 "enhanced_main.go:11:5: missing go.sum entry for module providing package github.com/hyperledger/fabric-contract-api-go/contractapi (imported by tendercc); to add:
+	go get tendercc
+main.go:10:5: github.com/golang/protobuf@v1.5.3: missing go.sum entry for go.mod file; to add it:
+	go mod download github.com/golang/protobuf
+"
+== INSTALL ORG2
+Error: chaincode install failed with status: 500 - failed to invoke backing implementation of 'InstallChaincode': could not build chaincode: docker build failed: docker image build failed: docker build failed: Error returned from build: 1 "enhanced_main.go:11:5: missing go.sum entry for module providing package github.com/hyperledger/fabric-contract-api-go/contractapi (imported by tendercc); to add:
+	go get tendercc
+main.go:10:5: github.com/golang/protobuf@v1.5.3: missing go.sum entry for go.mod file; to add it:
+	go mod download github.com/golang/protobuf
+"
+== QUERYINSTALLED (Org1)
+Installed chaincodes on peer:
+sed: -e expression #1, char 45: unterminated `s' command

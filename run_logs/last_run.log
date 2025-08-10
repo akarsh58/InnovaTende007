@@ -1,0 +1,3 @@
+=== Civil Tender Flow (Sat Aug  9 13:41:41 IST 2025)
+[1/6] CreateEnhancedTender
+Error: endorsement failure during invoke. response: status:500 message:"make sure the chaincode tendercc has been successfully defined on channel tenderchannel and try again: chaincode tendercc not found" 

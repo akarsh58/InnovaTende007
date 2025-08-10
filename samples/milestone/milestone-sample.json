@@ -1,0 +1,9 @@
+{
+  "tenderId": "RFQ-2025-INFRASTRUCTURE-001",
+  "milestoneId": "MS-001",
+  "title": "Design Phase Complete",
+  "evidenceHash": "sha256:design_evidence_hash_123",
+  "amount": 135000,
+  "details": "High-level and low-level design documents completed and approved by client. All technical specifications finalized and procurement list prepared.",
+  "paidAmount": 0
+}

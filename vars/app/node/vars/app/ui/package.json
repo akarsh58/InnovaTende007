@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "minifabric-node-js-app": "file:../../.."
+  }
+}

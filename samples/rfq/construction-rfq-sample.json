@@ -1,0 +1,94 @@
+{
+  "id": "RFQ-2025-INFRASTRUCTURE-001",
+  "projectScope": {
+    "description": "Enterprise Network Infrastructure Modernization",
+    "objectives": [
+      "Upgrade network backbone to 100Gbps",
+      "Implement zero-trust security",
+      "Achieve 99.99% uptime"
+    ],
+    "deliverables": [
+      "Architecture design",
+      "Hardware install & config",
+      "Security implementation",
+      "Testing & documentation",
+      "Staff training"
+    ],
+    "technicalSpecs": ["IPv6/MPLS", "Redundant Core", "SIEM Integration"],
+    "qualityStandards": ["ISO 9001:2015", "ISO 27001:2013"],
+    "geographicalConstraints": "Head Office, New York, NY",
+    "operationalConstraints": ["Maintenance windows only"],
+    "assumptions": ["Client provides workspace"],
+    "exclusions": ["End-user device config"],
+    "budget": {
+      "currency": "USD",
+      "estimatedMin": 500000,
+      "estimatedMax": 750000,
+      "paymentTerms": "Net 30",
+      "paymentSchedule": [
+        { "name": "Design Approval", "percentage": 20, "description": "Approved LLD/HLD" },
+        { "name": "Hardware Delivery", "percentage": 30, "description": "All hardware delivered" },
+        { "name": "Installation Complete", "percentage": 30 },
+        { "name": "Testing Complete", "percentage": 15 },
+        { "name": "Project Closure", "percentage": 5 }
+      ]
+    }
+  },
+  "deadlines": {
+    "rfqIssueDate": "2025-08-10T12:00:00Z",
+    "questionsDeadline": "2025-08-17T12:00:00Z",
+    "bidSubmissionDeadline": "2025-08-31T12:00:00Z",
+    "projectStartDate": "2025-09-15T12:00:00Z",
+    "projectEndDate": "2026-02-15T12:00:00Z",
+    "milestoneDeadlines": [
+      { "name": "Design Phase", "deadline": "2025-10-15T12:00:00Z", "description": "Design and approval", "critical": true }
+    ]
+  },
+  "evaluationCriteria": [
+    { "id": "TOTAL_COST", "name": "Total Cost", "weight": 30, "type": "QUANTITATIVE", "scoringMethod": "LOWEST_PRICE", "description": "Overall project cost" },
+    { "id": "TECHNICAL", "name": "Technical Approach", "weight": 35, "type": "QUALITATIVE", "scoringMethod": "HIGHEST_SCORE" },
+    { "id": "TEAM", "name": "Team Experience", "weight": 25, "type": "QUALITATIVE", "scoringMethod": "HIGHEST_SCORE" },
+    { "id": "TIMELINE", "name": "Timeline", "weight": 10, "type": "QUANTITATIVE", "scoringMethod": "HIGHEST_SCORE" }
+  ],
+  "bidRequirements": {
+    "requiredDocuments": [
+      { "name": "Executive Summary", "description": "5 pages max", "mandatory": true, "format": "PDF", "maxSizeMB": 5 },
+      { "name": "Technical Proposal", "mandatory": true, "format": "PDF", "maxSizeMB": 20 },
+      { "name": "Financial Proposal", "mandatory": true, "format": "PDF", "maxSizeMB": 10 },
+      { "name": "Team Resumes", "mandatory": true, "format": "PDF", "maxSizeMB": 15 },
+      { "name": "Company Profile", "mandatory": true, "format": "PDF", "maxSizeMB": 10 }
+    ],
+    "technicalRequirements": [
+      { "category": "Network", "description": "5+ yrs enterprise design", "standards": ["IEEE"], "mandatory": true },
+      { "category": "Security", "description": "Zero-trust expertise", "standards": ["NIST", "ISO27001"], "mandatory": true }
+    ],
+    "financialRequirements": { "minTurnover": 2000000, "minNetWorth": 1000000, "auditedFinancials": true, "yearsOfFinancials": 3, "currency": "USD" },
+    "experienceRequirements": { "minYearsInBusiness": 5, "similarProjectsMin": 3 },
+    "certificationRequirements": [ { "name": "ISO 9001", "issuingBody": "Accredited CB", "mandatory": true } ],
+    "bidSecurity": { "required": true, "type": "BANK_GUARANTEE", "percentage": 2.0, "currency": "USD", "validityDays": 90 },
+    "submissionFormat": { "method": "ONLINE", "fileFormats": ["PDF"], "maxFileSize": 100, "encryptionReq": true, "digitalSignature": true, "language": "English" }
+  },
+  "contractTerms": {
+    "contractType": "FIXED_PRICE",
+    "paymentTerms": { "paymentCycle": "MILESTONE_BASED", "paymentDays": 30, "retentionPercentage": 10, "retentionPeriod": 12, "currency": "USD" },
+    "performanceBond": { "required": true, "percentage": 10, "validityDays": 365, "type": "BANK_GUARANTEE" },
+    "warranties": [ { "type": "DEFECTS", "period": 12, "coverage": "FULL" } ],
+    "penalties": [ { "type": "DELAY", "percentage": 0.5, "cap": 10, "description": "per week" } ],
+    "intellectualProperty": { "ownershipOfWork": "CLIENT", "existingIPHandling": "LICENSE", "newIPOwnership": "CLIENT" },
+    "disputeResolution": { "method": "ARBITRATION", "jurisdiction": "New York, NY", "governingLaw": "NY Law" },
+    "termination": { "terminationForCause": true, "terminationForConvenience": true, "noticePeriod": 30 }
+  },
+  "complianceRequirements": [
+    { "type": "ENVIRONMENTAL", "standard": "ISO 14001", "description": "Environmental mgmt", "mandatory": false, "evidence": ["Certificate"], "auditable": true },
+    { "type": "SAFETY", "standard": "OHSAS 18001", "description": "Occupational safety", "mandatory": true, "evidence": ["Safety Training"], "auditable": true }
+  ],
+  "ownerDetails": {
+    "organizationName": "InnovaTech Solutions Inc.",
+    "legalEntity": "Delaware Corporation",
+    "address": { "street": "123 Innovation Dr", "city": "New York", "state": "NY", "country": "USA", "postalCode": "10001" },
+    "contactPerson": { "name": "Sarah Johnson", "title": "CPO", "email": "sarah.johnson@innovatech.com", "phone": "+1-555-0123" },
+    "authorizedBy": { "name": "Robert Smith", "title": "CEO", "authorityLevel": "Executive", "date": "2025-08-10T12:00:00Z" }
+  }
+}
+
+

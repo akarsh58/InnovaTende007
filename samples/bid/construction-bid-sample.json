@@ -1,0 +1,55 @@
+{
+  "tenderId": "RFQ-2025-INFRASTRUCTURE-001",
+  "bidId": "BID-TECHCORP-001",
+  "contractorId": "TECHCORP-SOLUTIONS",
+  "totalAmount": 675000,
+  "currency": "USD",
+  "technicalProposal": {
+    "methodology": "Agile phased implementation with risk-based governance",
+    "timeline": {
+      "startDate": "2025-09-15T12:00:00Z",
+      "endDate": "2026-02-15T12:00:00Z",
+      "phases": [
+        { "name": "Design", "startDate": "2025-09-15T12:00:00Z", "endDate": "2025-10-15T12:00:00Z", "deliverables": ["HLD", "LLD"] },
+        { "name": "Procurement", "startDate": "2025-10-16T12:00:00Z", "endDate": "2025-12-01T12:00:00Z", "deliverables": ["Hardware", "Licenses"] },
+        { "name": "Implementation", "startDate": "2025-12-02T12:00:00Z", "endDate": "2026-01-30T12:00:00Z", "deliverables": ["Install", "Config", "Security"] },
+        { "name": "Testing", "startDate": "2026-01-31T12:00:00Z", "endDate": "2026-02-15T12:00:00Z", "deliverables": ["UAT", "Docs", "Training"] }
+      ],
+      "criticalPath": ["Design Approval", "Hardware Delivery", "Core Install"]
+    },
+    "teamComposition": [
+      { "name": "Alice Johnson", "role": "PM", "experience": 8, "skills": ["PMP"], "certifications": ["PMP"], "allocationPercentage": 50 },
+      { "name": "Bob Wilson", "role": "Network Architect", "experience": 12, "skills": ["CCIE"], "certifications": ["CCIE"], "allocationPercentage": 75 }
+    ],
+    "resources": [ { "type": "EQUIPMENT", "name": "Analyzers", "quantity": 2, "duration": 30 } ],
+    "qualityAssurance": { "standards": ["ISO 9001:2015"], "procedures": ["CI/CD"], "testingPlan": "Unit/Integration/Perf", "documentation": "As-built docs" },
+    "riskMitigation": [ { "risk": "Delivery delay", "probability": "MEDIUM", "impact": "HIGH", "mitigation": "Secondary suppliers" } ]
+  },
+  "financialProposal": {
+    "breakdownByPhase": [
+      { "phase": "Design", "cost": 135000, "hours": 900 },
+      { "phase": "Procurement", "cost": 270000 },
+      { "phase": "Implementation", "cost": 202500, "hours": 1350 },
+      { "phase": "Testing", "cost": 67500, "hours": 450 }
+    ],
+    "breakdownByCategory": [
+      { "category": "LABOR", "cost": 405000, "percentage": 60 },
+      { "category": "HARDWARE", "cost": 202500, "percentage": 30 },
+      { "category": "SOFTWARE", "cost": 47250, "percentage": 7 },
+      { "category": "MISC", "cost": 20250, "percentage": 3 }
+    ],
+    "paymentSchedule": [
+      { "milestone": "Design Approval", "percentage": 20, "amount": 135000, "deliverables": ["HLD", "LLD"] },
+      { "milestone": "Hardware Delivery", "percentage": 30, "amount": 202500, "deliverables": ["Hardware Received"] },
+      { "milestone": "Implementation Complete", "percentage": 30, "amount": 202500, "deliverables": ["Installed", "Configured"] },
+      { "milestone": "Final Acceptance", "percentage": 20, "amount": 135000, "deliverables": ["Docs", "Training", "Warranty"] }
+    ],
+    "priceValidity": 60
+  },
+  "complianceChecklist": { "ISO27001": true, "SAFETY": true, "SECURITY": true, "ENVIRONMENTAL": false },
+  "documentHashes": { "technicalProposal": "sha256:abc123", "financialProposal": "sha256:def456" },
+  "submittedAt": "2025-08-20T12:00:00Z",
+  "validUntil": "2025-11-20T12:00:00Z"
+}
+
+

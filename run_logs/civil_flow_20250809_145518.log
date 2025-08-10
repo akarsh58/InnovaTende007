@@ -1,0 +1,13 @@
+=== Civil Tender Flow (Sat Aug  9 14:55:18 IST 2025)
+[1/8] CreateEnhancedTender (RFQ-20250809-145518)
+[2/8] PublishTender (RFQ-20250809-145518)
+[3/8] SubmitEnhancedBid
+[4/8] CloseTenderEnhanced
+[5/8] EvaluateBids
+[6/8] AwardBestBid
+[7/8] SubmitMilestone (private)
+[8/8] ApproveMilestone
+--- Public Milestones ---
+[{"tenderId":"RFQ-20250809-145518","milestoneId":"MS-001","title":"Foundation Completed","evidenceHash":"e3b0c44298fc1c149afbf4c8996fb924","status":"SUBMITTED","paymentReleased":false}]
+--- Tender Statistics ---
+{"bidSubmissionDeadline":"2025-08-23T09:25:18.739209Z","complianceReqs":2,"contractors":["TECHCORP-SOLUTIONS"],"createdAt":"2025-08-09T09:25:18Z","currency":"USD","evaluationCriteria":4,"projectValue":750000,"status":"AWARDED","tenderId":"RFQ-20250809-145518","totalBids":1,"updatedAt":"2025-08-09T09:25:29Z","version":4}

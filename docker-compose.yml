@@ -1,0 +1,30 @@
+version: '3.8'
+services:
+  api:
+    build: ./vars/app/node
+    container_name: tender_api
+    environment:
+      - PORT=3000
+      - JWT_SECRET=please-change
+      - AUTH_DISABLED=false
+      - CHANNEL=tenderchannel
+      - CHAINCODE=tendercc
+      - IDENTITY=Admin@org1.example.com
+      - CCP=/workspace/fabric-samples/test-network/organizations/peerOrganizations/org1.example.com/connection-org1.json
+      - ORG1_ADMIN_MSP=/workspace/fabric-samples/test-network/organizations/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp
+    volumes:
+      - ${HOME}/fabric-samples:/workspace/fabric-samples:ro
+      - ./samples:/app/samples:ro
+    ports:
+      - "3000:3000"
+  ui:
+    build: ./vars/app/ui
+    container_name: tender_ui
+    environment:
+      - VITE_API_BASE=http://localhost:3000
+    ports:
+      - "5174:5174"
+    depends_on:
+      - api
+    healthcheck:
+      test: ["CMD", "node", "-e", "fetch('http://localhost:5174').catch(()=>process.exit(1))"]

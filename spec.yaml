@@ -1,0 +1,17 @@
+organizations:
+  - org0.example.com
+  - org1.example.com
+fabric:
+  cas:
+    - org0.example.com
+    - org1.example.com
+  peers:
+    - org0.example.com
+    - org1.example.com
+  orderers:
+    - org0.example.com
+  channels:
+    - name: tenderchannel
+      orgs:
+        - org0.example.com
+        - org1.example.com

@@ -1,0 +1,19 @@
+=== Civil Tender Flow (Sat Aug  9 15:39:54 IST 2025)
+[1/8] CreateEnhancedTender (RFQ-20250809-153954)
+[2/8] PublishTender (RFQ-20250809-153954)
+[3/8] SubmitEnhancedBid
+[4/8] CloseTenderEnhanced
+[5/8] EvaluateBids
+[6/8] AwardBestBid
+[7/8] SubmitMilestone (private)
+[8/8] ApproveMilestone
+--- Public Milestones ---
+[{"tenderId":"RFQ-20250809-153954","milestoneId":"MS-001","title":"Foundation Completed","evidenceHash":"e3b0c44298fc1c149afbf4c8996fb924","status":"SUBMITTED","paymentReleased":false}]
+--- Tender Statistics ---
+{"bidSubmissionDeadline":"2025-08-23T10:09:54.082602Z","complianceReqs":2,"contractors":["TECHCORP-SOLUTIONS"],"createdAt":"2025-08-09T10:09:54Z","currency":"USD","evaluationCriteria":4,"projectValue":750000,"status":"AWARDED","tenderId":"RFQ-20250809-153954","totalBids":1,"updatedAt":"2025-08-09T10:10:05Z","version":4}
+--- Financial Summary (before partial/retention) ---
+{"approvedMilestones":1,"budgetEstimatedMax":750000,"budgetEstimatedMin":500000,"currency":"USD","retentionHeld":12500,"retentionPercent":10,"retentionReleased":false,"retentionReleasedAt":"","tenderId":"RFQ-20250809-153954","totalApprovedPayments":125000}
+[9/10] RecordPartialPayment 50000.00
+[10/10] ReleaseRetention
+--- Financial Summary (after partial/retention) ---
+{"approvedMilestones":1,"budgetEstimatedMax":750000,"budgetEstimatedMin":500000,"currency":"USD","retentionHeld":5000,"retentionPercent":10,"retentionReleased":true,"retentionReleasedAt":"2025-08-09T10:10:15Z","tenderId":"RFQ-20250809-153954","totalApprovedPayments":50000}

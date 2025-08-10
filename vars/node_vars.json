@@ -1,0 +1,114 @@
+{
+  "allcas": [
+    {
+      "adminPassword": "adminpw",
+      "command": "fabric-ca-server start -b admin:adminpw --cfg.affiliations.allowremove --cfg.identities.allowremove",
+      "fullname": "org1.example.com",
+      "mspid": "example-com",
+      "name": "org1",
+      "oport": "8000",
+      "org": "example.com",
+      "port": "7000",
+      "portmap": "-p 7000:7054 -p 8000:9443",
+      "type": "ca",
+      "url": "10.255.255.254"
+    },
+    {
+      "adminPassword": "adminpw",
+      "command": "fabric-ca-server start -b admin:adminpw --cfg.affiliations.allowremove --cfg.identities.allowremove",
+      "fullname": "org2.example.com",
+      "mspid": "example-com",
+      "name": "org2",
+      "oport": "8001",
+      "org": "example.com",
+      "port": "7001",
+      "portmap": "-p 7001:7054 -p 8001:9443",
+      "type": "ca",
+      "url": "10.255.255.254"
+    }
+  ],
+  "allcouchdbs": [
+    {
+      "adminPassword": "adminpw",
+      "fullname": "org1.example.com.couchdb",
+      "mspid": "example-com",
+      "name": "org1.couchdb",
+      "org": "example.com",
+      "port": "7004",
+      "portmap": "-p 7004:5984",
+      "type": "couchdb",
+      "url": "10.255.255.254"
+    },
+    {
+      "adminPassword": "adminpw",
+      "fullname": "org2.example.com.couchdb",
+      "mspid": "example-com",
+      "name": "org2.couchdb",
+      "org": "example.com",
+      "port": "7005",
+      "portmap": "-p 7005:5984",
+      "type": "couchdb",
+      "url": "10.255.255.254"
+    }
+  ],
+  "allorderers": [
+    {
+      "fullname": "org0.example.com",
+      "mspid": "example-com",
+      "name": "org0",
+      "oport": "8006",
+      "org": "example.com",
+      "port": "7006",
+      "portmap": "-p 7006:7050 -p 8006:7060",
+      "type": "orderer",
+      "url": "10.255.255.254"
+    }
+  ],
+  "allorgs": [
+    "example.com"
+  ],
+  "allpeers": [
+    {
+      "adminPassword": "adminpw",
+      "fullname": "org1.example.com",
+      "mspid": "example-com",
+      "name": "org1",
+      "oport": "8002",
+      "org": "example.com",
+      "port": "7002",
+      "portmap": "-p 7002:7051 -p 8002:7061",
+      "type": "peer",
+      "url": "10.255.255.254"
+    },
+    {
+      "adminPassword": "adminpw",
+      "fullname": "org2.example.com",
+      "mspid": "example-com",
+      "name": "org2",
+      "oport": "8003",
+      "org": "example.com",
+      "port": "7003",
+      "portmap": "-p 7003:7051 -p 8003:7061",
+      "type": "peer",
+      "url": "10.255.255.254"
+    }
+  ],
+  "caorgs": [
+    "example.com"
+  ],
+  "console_port": "7010",
+  "explorer_port": "7008",
+  "ordererorgs": [
+    "example.com"
+  ],
+  "orgattrs": {
+    "example.com": {
+      "certpath": "peerOrganizations",
+      "mspid": "example-com"
+    }
+  },
+  "peerorgs": [
+    "example.com"
+  ],
+  "portainer_port": "7009"
+}

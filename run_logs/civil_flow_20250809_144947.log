@@ -1,0 +1,9 @@
+=== Civil Tender Flow (Sat Aug  9 14:49:47 IST 2025)
+[1/6] CreateEnhancedTender (RFQ-20250809-144947)
+[2/6] PublishTender (RFQ-20250809-144947)
+[3/6] SubmitEnhancedBid
+[4/6] CloseTenderEnhanced
+[5/6] EvaluateBids
+[6/6] AwardBestBid
+--- Tender Statistics ---
+{"bidSubmissionDeadline":"2025-08-23T09:19:47.723507Z","complianceReqs":2,"contractors":["TECHCORP-SOLUTIONS"],"createdAt":"2025-08-09T09:19:47Z","currency":"USD","evaluationCriteria":4,"projectValue":750000,"status":"CLOSED","tenderId":"RFQ-20250809-144947","totalBids":1,"updatedAt":"2025-08-09T09:19:54Z","version":3}

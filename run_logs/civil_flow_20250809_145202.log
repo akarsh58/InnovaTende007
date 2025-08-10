@@ -1,0 +1,8 @@
+=== Civil Tender Flow (Sat Aug  9 14:52:02 IST 2025)
+[1/8] CreateEnhancedTender (RFQ-20250809-145202)
+[2/8] PublishTender (RFQ-20250809-145202)
+[3/8] SubmitEnhancedBid
+[4/8] CloseTenderEnhanced
+[5/8] EvaluateBids
+[6/8] AwardBestBid
+[7/8] SubmitMilestone (private)

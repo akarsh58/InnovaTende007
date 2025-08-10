@@ -1,0 +1,75 @@
+{
+  "name": "org0-network",
+  "version": "1.0.0",
+  "client": {
+    "organization": "org0.example.com",
+    "connection": {
+      "timeout": {
+        "peer": {
+          "endorser": "300"
+        },
+        "orderer": "300"
+      }
+    }
+  },
+  "organizations": {
+    "org0.example.com": {
+      "mspid": "org0-example-com",
+      "peers": [
+        "peer1.org0.example.com"
+      ],
+      "certificateAuthorities": []
+    }
+  },
+  "orderers": {
+    "orderer1.example.com": {
+      "url": "grpcs://172.18.0.2:7050",
+      "grpcOptions": {
+        "ssl-target-name-override": "orderer1.example.com",
+        "grpc.keepalive_time_ms": 30000,
+        "grpc.keepalive_timeout_ms": 5000,
+        "grpc.keepalive_permit_without_calls": true,
+        "grpc.http2.max_pings_without_data": 0,
+        "grpc.http2.min_time_between_pings_ms": 10000,
+        "grpc.http2.min_ping_interval_without_data_ms": 300000,
+        "request-timeout": 60000
+      },
+      "tlsCACerts": {
+        "pem": "-----BEGIN CERTIFICATE-----\nMIICoTCCAkigAwIBAgIUIA+GNp18IY6+Q8z2Jl6408S3oHcwCgYIKoZIzj0EAwIw\najELMAkGA1UEBhMCVVMxFzAVBgNVBAgMDk5vcnRoIENhcm9saW5hMRAwDgYDVQQH\nDAdSYWxlaWdoMRQwEgYDVQQKDAtleGFtcGxlLmNvbTEaMBgGA1UEAwwRdGxzY2Eu\nZXhhbXBsZS5jb20wHhcNMjUwODA4MTYyMzE4WhcNMzUwODA2MTYyMzE4WjBqMQsw\nCQYDVQQGEwJVUzEXMBUGA1UECAwOTm9ydGggQ2Fyb2xpbmExEDAOBgNVBAcMB1Jh\nbGVpZ2gxFDASBgNVBAoMC2V4YW1wbGUuY29tMRowGAYDVQQDDBF0bHNjYS5leGFt\ncGxlLmNvbTBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABPM2Oox32hEwX9WhzMo2\n1Gixs6ZkW5Aom5vaDJKLXdnRL1zsrUFmfcStCkX4PN/QaJ/NVXKjQ3PuW8sENY9K\nPRajgcswgcgwHQYDVR0OBBYEFATHdC3QXWOvoeGbeoAwBX2Uuz5rMB8GA1UdIwQY\nMBaAFATHdC3QXWOvoeGbeoAwBX2Uuz5rMA8GA1UdEwEB/wQFMAMBAf8wDgYDVR0P\nAQH/BAQDAgGmMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjBGBgNVHREE\nPzA9hwQK///+ghF0bHNjYS5leGFtcGxlLmNvbYIRdGxzY2EtZXhhbXBsZS1jb22C\nCWxvY2FsaG9zdIcEfwAAATAKBggqhkjOPQQDAgNHADBEAiBjbsU8v9/+moC+fYJo\n3Diux1fvFQl9NeGrknJv6/NzdQIgXKYAFlLAL2phSGfk3ZQk1A8LvO7GcD72/j6y\nWJG5znA=\n-----END CERTIFICATE-----\n"
+      }
+    }
+  },
+  "peers": {
+    "peer1.org0.example.com": {
+      "url": "grpcs://172.18.0.5:7051",
+      "grpcOptions": {
+        "ssl-target-name-override": "peer1.org0.example.com",
+        "grpc.keepalive_time_ms": 30000,
+        "grpc.keepalive_timeout_ms": 5000,
+        "grpc.keepalive_permit_without_calls": true,
+        "grpc.http2.max_pings_without_data": 0,
+        "grpc.http2.min_time_between_pings_ms": 10000,
+        "grpc.http2.min_ping_interval_without_data_ms": 300000,
+        "request-timeout": 60000
+      },
+      "tlsCACerts": {
+        "pem": "-----BEGIN CERTIFICATE-----\nMIICxDCCAmqgAwIBAgIUc9JujDYBoyY86g4xVQiInVcx4L8wCgYIKoZIzj0EAwIw\ndTELMAkGA1UEBhMCVVMxFzAVBgNVBAgMDk5vcnRoIENhcm9saW5hMRAwDgYDVQQH\nDAdSYWxlaWdoMRkwFwYDVQQKDBBvcmcwLmV4YW1wbGUuY29tMSAwHgYDVQQDDBd0\nbHNjYTEub3JnMC5leGFtcGxlLmNvbTAeFw0yNTA4MDgxNjI0MjFaFw0zNTA4MDYx\nNjI0MjFaMHUxCzAJBgNVBAYTAlVTMRcwFQYDVQQIDA5Ob3J0aCBDYXJvbGluYTEQ\nMA4GA1UEBwwHUmFsZWlnaDEZMBcGA1UECgwQb3JnMC5leGFtcGxlLmNvbTEgMB4G\nA1UEAwwXdGxzY2ExLm9yZzAuZXhhbXBsZS5jb20wWTATBgcqhkjOPQIBBggqhkjO\nPQMBBwNCAAQko2+/EHFoSo4mbtr8Yumwkv/Gh2bMCZIXf9aAe0dWzyKE1BQQVfhF\ngv181m31hzMdvHLY2J5waP6VYrUhxOZ5o4HXMIHUMB0GA1UdDgQWBBSG9PuqBCm+\nDFPaF1S3N9IWfpcnKzAfBgNVHSMEGDAWgBSG9PuqBCm+DFPaF1S3N9IWfpcnKzAP\nBgNVHRMBAf8EBTADAQH/MA4GA1UdDwEB/wQEAwIBpjAdBgNVHSUEFjAUBggrBgEF\nBQcDAQYIKwYBBQUHAwIwUgYDVR0RBEswSYcECv///oIXdGxzY2ExLm9yZzAuZXhh\nbXBsZS5jb22CF3Rsc2NhMS1vcmcwLWV4YW1wbGUtY29tgglsb2NhbGhvc3SHBH8A\nAAEwCgYIKoZIzj0EAwIDSAAwRQIgAPda2O31A8zghQ9284k6JgHmToMWi482k0mu\n57qJjDoCIQD3rdemXn9xjH0D0BO6LUwjq7tsdDEucW1wsWXnMJLETA==\n-----END CERTIFICATE-----\n"
+      }
+    }
+  },
+  "channels": {
+    "tenderchannel": {
+      "orderers": [
+        "orderer1.example.com"
+      ],
+      "peers": {
+        "peer1.org0.example.com": {
+          "endorsingPeer": true,
+          "chaincodeQuery": true,
+          "ledgerQuery": true,
+          "eventSource": true
+        }
+      }
+    }
+  }
+}
